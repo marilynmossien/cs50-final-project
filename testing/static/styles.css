@@ -1,0 +1,129 @@
+/* http://stackoverflow.com/questions/5127937/how-to-center-canvas-in-html5 */
+/* center the canvas */
+#myCanvas {
+    margin: 0 auto;
+    display: block;
+    border: 4px solid black;
+}
+
+/* design elements for inputs and buttons */
+.form-group {
+    display: block; 
+}
+
+/* design elements for labels */
+label {
+    margin: 0 auto; 
+    display: block;
+    text-align: center;
+}
+
+/* more design elements for inputs and buttons */
+.form-control {
+    width: 175px;
+    display: block;
+    margin: 0 auto; 
+} 
+
+/* design elements for buttons */ 
+.btn {
+    display: block;
+    margin: 0 auto; 
+}
+
+/* design elements for homepage header */ 
+#introheader {
+    font-family: Arial;
+    padding-top: 110px;
+    font-size: 8em;
+    display: block;
+    margin: 0 auto;
+}
+
+/* design elements for instructions page header */ 
+#introheader2 {
+    font-family: Arial;
+    padding-top: 50px;
+    font-size: 4em;
+    display: block;
+    margin: 0 auto;
+}
+
+/* design elements for choice page header */
+#head {
+    font-family: Arial;
+    padding-top: 200px;
+    padding-bottom: 90px;
+    font-size: 3em;
+    display: block;
+    margin: 0 auto;
+}
+
+/* design elements for instructions page text */
+#text1 {
+    font-family: Arial;
+    padding-top: 35px;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 2em;
+    display: block;
+    margin: 0 auto;
+}
+
+/* http://www.w3schools.com/css/css_font.asp */
+/* design elements for enter button */
+#enter {
+    font-family: Arial;
+    font-weight: bold;
+    width: 150px;
+    height: 75px;
+    font-size: 2em;
+}
+
+/* design elements for buttons on choice page */
+#choice1 {
+    font-family: Arial;
+    font-weight: bold;
+    width: 150px;
+    height: 75px;
+    font-size: 2em;
+}
+
+/* design elements for homepage subheader */
+#subheader {
+    font-family: Arial;
+    padding-top: 40px;
+    font-size: 3em;
+    display: block;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+/* design elements for 'instructions' and 'get started' buttons */
+#template {
+    margin-top: 250px;
+    width: 400px;
+    height: 150px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* design elements for instructions page buttons */
+#template2 {
+    margin-top: 70px;
+    width: 200px;
+    height: 75px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* design elements for event page buttons */ 
+#home {
+    width: 150px;
+    height: 56px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.5em;
+}

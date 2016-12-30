@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+        <meta charset="utf-8"/>
+        
+        <meta content="initial-scale=1, width=device-width" name="viewport"/>
+
+        <!-- http://getbootstrap.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- app's own CSS -->
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
+        <!-- http://jquery.com/ -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <!-- http://getbootstrap.com/ -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- app's own JavaScript -->
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+        
+        <title>Timelines</title>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    </head>
+    
+    <body>
+        <!-- instructions --> 
+        <p id="introheader2" style="text-align: center"><strong> Instructions </strong></p>
+        <p style="text-align: center" id="text1">
+            Welcome to Timelines!
+            </br></br>
+            With <i>Timelines</i>, you can visualize your project to help you organize it. </br></br>
+            <b>First, choose a route: </b></br> </br>
+                If you're a writer, choose "novel" to plan your next project. </br>
+                If you're an event planner, choose "event" to start organizing tasks. </br> </br>
+                
+                Input boxes on the page will prompt you to add information. </br>For a novel, first input the name, a brief plot summary, the instigating event, and resolution of the story. 
+                Then add the rising action, climax, and falling action. Your inputs will map to the timeline in their proper places.
+                </br>
+                For an event, input the name, start date (when you're beginning to plan), and end date. Then begin to add tasks. Each task requires a start and end date, name, and 
+                actor (person assigned to the task). Tasks will add to the timeline in their proper places and will be logged on the bottom of the screen. 
+        </p>
+        <table width="100%">
+            <tr>
+                <th>
+                    <!-- buttons to link to homepage and choice page --> 
+                    <form action="{{ url_for('intro') }}" method="GET">
+                        <div class="form-group" style="text-align: center">
+                            <button class="btn btn-default" type="submit" id="template2">Homepage</button>
+                        </div>
+                    </form>
+                </th>
+                <th>
+                    <form action="{{ url_for('choice') }}" method="GET">
+                        <div class="form-group" style="text-align: center">
+                            <button class="btn btn-default" type="submit" id="template2">Get Started</button>
+                        </div>
+                    </form>
+                </th>
+            </tr>
+        </table>
+    </body>
+</html>

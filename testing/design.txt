@@ -1,0 +1,34 @@
+Timelines is a website run on flask with python, but the majority of the code is in JavaScript (in conjunction with HTML). The 
+JavaScript file contains all the functions that power the website. The creation of the timeline and adding of tasks/plot points is 
+done using the canvas functionality, which allows functions to draw on the screen. The basic timeline is established when the website 
+loads. 
+
+For the event page, first the user inputs the name, start date, and end date. The function called when this button is pressed changes
+the inner HTML of the header to match the name of the project. It also draws points on the timeline at the ends with the dates. To add 
+a task, a user must input the start and end date, name, and person assigned to the task (though only dates are strictly speaking 
+necessary). This calls a different function which adds points at the correct spots on the timeline for the dates, and draws a curve 
+between them. The function to add these points is fairly complicated - it grabs the start and end date values for the whole project 
+and uses them plus the pixel length of the timeline to calculate how 'long' a day is in this particular project. I had to measure time 
+length in milliseconds using the getTime function because different aspects of JavaScript measure date inputs differently - often 
+different parts of the function I was trying to write were one day off from each other. Once the function has calculated how long a 
+day is, it adds the points at the correct spots according to that measurement. It also adds the task name and actor to the curve it's 
+drawn. The curve is drawn at a random height (within the canvas) so the tasks do not overlap. However, an inherent limitation of this 
+project is that it can only handle so many tasks before the timeline becomes hard to read. The event page also has a function that 
+logs tasks by taking the inputs and appending them to a paragraph at the end of the page.  
+
+This project was originally a novel-planning website; I created the novel planning page to return to that. The novel page is similar 
+to the event-planning page, but more structured. Novels aren't organized by date, but rather by plot point. So the functions on this 
+page take in the instigating event (beginning of novel) and resolution (end) instead of start and end dates. The plot points it asks 
+for - rising action, climax, falling action - are set at specific points 25, 50, and 75% of the way across the timeline. The novel 
+page is even more size-limited - users must limit their plot-point descriptions to a sentence, or it will become hard to read. 
+
+While the JavaScript functions power the dynamic aspects of the project, the HTML and CSS are essential to the design. There are six 
+HTML pages that utilize bootstrap for their design. They interlink through routes in application.py. CSS provides the design, which 
+mostly involves centering input boxes and balancing the page, appearance-wise. The CSS is minimized by assigning the same id to 
+multiple objects that perform similar functions. The HTML contains a lot of tables because they help center the buttons and format 
+them correctly. Writing the HTML mostly involved figuring out the cleanest way to format inputs and use them with JavaScript. Overall 
+creating this project taught me a lot about JavaScript functions, especially using them in conjunction with CSS and HTML. 
+
+I decided not to use a SQL database back-end as I originally planned because it would not, as far as I could tell, work with the 
+canvas functionality. This is because SQL requires data, and the canvas doesn't really create data, it just draws things that the 
+program immediately forgets. Therefore I decided instead to focus on perfecting the JavaScript. 

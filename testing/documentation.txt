@@ -1,0 +1,44 @@
+Timelines is entirely run through CS50 IDE. All necessary files are contained within the folder 'testing.' They are:
+    (within static)
+        scripts.js
+        styles.css
+    (within templates)
+        choice.html
+        intro.html
+        novel.html
+        parttwo.html
+        template.html
+        test.html
+    (solely within testing)
+        application.py
+        design.txt
+        documentation.txt
+To run the website, change directories in the command line to be within the 'testing' folder, i.e., cd ~/workspace/testing. Then run 
+with flask, via: flask run. 
+
+Opening the website via the IDE's web server will bring you to the intro page, which says "Welcome to Timelines." Clicking 'enter' 
+takes you to the next page. On this page, clicking 'instructions' will take you to the web site's instruction page, clicking 'get 
+started' takes you to the next page.
+
+When you click instructions, you'll be brought to that page. At the bottom are two buttons, 'homepage' and 'get started,' which take 
+you back to the 'welcome to timelines' intro page and the 'get started/choice' page, respectively. 
+
+Clicking 'get started,' on either page on which it appears, brings you to a page where you must choose what type of project you're 
+working on: either an event or a novel. Clicking on event takes you to the event-planning page, clicking on the novel takes you to 
+the novel-planning page.
+
+On the event planning page, you must first create a project by inputting a name, start date (i.e. when you're beginning to plan an 
+event), and end date. These will map to the timeline when you press 'create'. Then add tasks via the "add task" function. Add a start 
+and end date (within the range of the event's start and end dates), a task name, and an actor (the person assigned to the task). This 
+will also map to the timeline in the appropriate location. As you add tasks to the timeline, they will be replicated in a list on the 
+bottom of the screen. This page also contains links to the homepage and the instructions. 
+
+The novel planning page is similar to the event plannning page, but more structured. Input the name of the novel, a one sentence plot 
+summary, the instigating event, and the resolution. They will add to the timeline when you press 'create.' Then add the rising action, 
+climax, and falling action by filling in the appropriate input boxes and pressing 'plot.' This page also has links back to the homepage 
+and instructions. 
+
+
+
+description video:
+https://www.youtube.com/watch?v=MppLURZIP2U
